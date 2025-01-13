@@ -84,7 +84,7 @@ const employee: ComputedRef<Employee | null> = computed(() => {
     color: var(--color-font-thirdly);
 }
 .no-employee {
-    display: flex;
+    display: grid;
     align-items: center;
     height: 100%;
     text-align: center;

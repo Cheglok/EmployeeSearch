@@ -28,5 +28,6 @@ import EmployeeDetails from "@/components/EmployeeDetails.vue";
     flex-grow: 1;
     box-shadow: var(--small-shadow);
     background-color: #fdfdfd;
+    border-radius: 10px;
 }
 </style>

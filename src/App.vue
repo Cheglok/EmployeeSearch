@@ -4,6 +4,6 @@
 </template>
 
 <script setup lang="ts">
-import EmployeeSearch from "@/components/EmployeeSearchPage.vue";
+import EmployeeSearch from "@/pages/EmployeeSearchPage.vue";
 import ErrorModal from "@/components/ErrorModal.vue";
 </script>

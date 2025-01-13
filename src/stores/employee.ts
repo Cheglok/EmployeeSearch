@@ -1,5 +1,5 @@
 import { defineStore } from "pinia";
-import { api } from "@/api/api";
+import { api } from "@/services/api";
 import axios from "axios";
 import { handleAxiosError } from "@/helpers/handleAxiosError";
 import { Employee } from "@/typespaces/types";
@@ -47,7 +47,7 @@ export const useEmployeeStore = defineStore("employee", {
                 const requests = [];
                 if (ids.length > 0) {
                     requests.push(
-                        api.get(`https://jsonplaceholder.typ4icode.com/users?${idsQuery}`, {
+                        api.get(`https://jsonplaceholder.typicode.com/users?${idsQuery}`, {
                             signal: this.abortController.signal,
                         })
                     );

@@ -45,7 +45,6 @@ const isActive = computed(() => {
     background-image: url("@/assets/images/image-placeholder.png");
     background-position: center;
     background-size: cover;
-    border-right: 1px solid var(--color-light-gray);
     width: 70px;
     height: 70px;
 }
@@ -55,6 +54,7 @@ const isActive = computed(() => {
     gap: 5px;
     word-break: break-all;
     padding: 15px 13px;
+    border-left: 1px solid var(--color-light-gray);
     &__username {
         font-weight: 600;
         color: var(--color-font-secondary);
