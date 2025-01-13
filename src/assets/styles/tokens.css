@@ -1,0 +1,9 @@
+:root {
+    --color-font-primary: #000000;
+    --color-font-secondary: #333333;
+    --color-font-thirdly: #76787d;
+    --color-brand: #e31f24;
+    --color-light-gray: #e0e0e0;
+
+    --small-shadow: 0 0 10px 0 #0000001a;
+}
