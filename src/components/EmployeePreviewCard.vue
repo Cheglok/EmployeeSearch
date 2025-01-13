@@ -12,6 +12,7 @@
 import { computed } from "vue";
 import { useEmployeeStore } from "@/stores/employee";
 import { Employee } from "@/typespaces/types";
+
 const employeeStore = useEmployeeStore();
 
 const props = defineProps<{ employee: Employee }>();

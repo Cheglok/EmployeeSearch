@@ -28,6 +28,9 @@ const employeeStore = useEmployeeStore();
 const inputValue = ref("");
 
 watch(inputValue, (newValue) => {
+    if (!newValue) {
+        employeeStore.resetEmployees();
+    }
     handleInput(newValue);
 });
 
@@ -45,9 +48,11 @@ const handleInput = debounce((value: string) => {
     font-weight: 600;
     margin: 0;
     font-size: 16px;
+
     &__search {
         margin-bottom: 22px;
     }
+
     &__results {
         margin-bottom: 10px;
     }

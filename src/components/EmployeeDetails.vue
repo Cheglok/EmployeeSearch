@@ -26,6 +26,7 @@ import { computed, ComputedRef } from "vue";
 import { Employee } from "@/typespaces/types";
 
 const employeeStore = useEmployeeStore();
+
 const employee: ComputedRef<Employee | null> = computed(() => {
     return employeeStore.currentEmployee;
 });

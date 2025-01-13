@@ -2,7 +2,7 @@
     <Teleport to="body">
         <dialog aria-label="Ошибка" ref="dialog" class="error-modal">
             <div class="error-modal__content">
-                {{ employeeStore.error }}
+                {{ error }}
                 <button class="error-modal__button" @click="closeError">ОК</button>
             </div>
         </dialog>

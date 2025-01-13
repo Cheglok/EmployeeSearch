@@ -6,9 +6,7 @@
     </header>
 </template>
 
-<script setup lang="ts"></script>
-
-<style scoped>
+<style scoped lang="scss">
 .main-header {
     display: flex;
     align-items: flex-start;

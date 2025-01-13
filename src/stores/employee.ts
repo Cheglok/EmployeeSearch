@@ -28,9 +28,9 @@ export const useEmployeeStore = defineStore("employee", {
             this.abortController = new AbortController();
 
             if (!payload) {
-                this.resetState();
                 return;
             }
+
             const fragments = payload
                 .split(",")
                 .map((item) => item.trim())
@@ -71,7 +71,7 @@ export const useEmployeeStore = defineStore("employee", {
                 this.loading = false;
             }
         },
-        resetState() {
+        resetEmployees() {
             this.employees = [];
             this.currentEmployee = null;
         },
